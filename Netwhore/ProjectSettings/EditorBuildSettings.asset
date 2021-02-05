@@ -4,5 +4,8 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Week2/Programchatto.unity
+    guid: de7ad6659b958f74386845c868144026
   m_configObjects: {}
