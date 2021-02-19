@@ -49,8 +49,8 @@ namespace Programchatto
         {
             Debug.Log("msg from server : " + messageEventArgs.Data);
             MSG.Add(messageEventArgs.Data);
-            string[] tempo = MSG[MSG.Count - 1].Split(':');
-            RecieveText.text = (" " + MSG[MSG.Count - 1]);
+            string[] tempo = MSG[MSG.Count - 2].Split(':');
+            RecieveText.text = (" " + MSG[0]); // for loop i = 0; i < MSG.Count; i++
            
         }
 
@@ -58,7 +58,7 @@ namespace Programchatto
         {
 
             websocket.Send("  " + inputField.text);
-            SenderText.text = (" " + inputField.text);
+            SenderText.text = (" " + inputField.text); //swap 
         }
 
 
